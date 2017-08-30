@@ -30,7 +30,7 @@ $(document).on('click', '.animalButton', function(){
     $(this).addClass('active');
 //sets the type on the giphy search
     var type = $(this).data('type');
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "//api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     $.ajax({url: queryURL, method: 'GET'})
      .done(function(response) {
